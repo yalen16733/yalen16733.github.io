@@ -1,0 +1,310 @@
+@import url(https://fonts.googleapis.com/css?family=Muli);
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+    font-family: 'Muli', serif;
+    overflow-x: hidden;
+    color: #00405d;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+#block-top {
+    background-image: url('../../images/bg-top.jpg');
+    background-size: cover;
+    background-position: bottom;
+    height: 550px;
+    width: 100%;
+    padding: 50px 0 0 0;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+#block-center {
+    background-color: #00405d;
+    height: auto;
+    top: 500px;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    padding: 0;
+}
+
+#block-center #balckBackground {
+    background-color: rgba(0, 0, 0, 0.8);;
+    width: 100%;
+    position: absolute;
+    top:0;
+    z-index: 19;
+}
+
+#block-center h1 {
+    display: none;
+    font-size: 36px;
+    letter-spacing: 15px;
+    text-align: center;
+    position: relative;
+    z-index: 20;
+    color: #fff;
+    top: 150px;
+    margin: 0;
+}
+#videoContainerBackground {
+    position: absolute;
+    top:0;
+    width: 100%;
+}
+
+#videoContainerBackground video {
+    width: 100%;
+    height:auto;
+    margin: 0;
+}
+
+#block-bottom {
+    background-image: url('../../images/bg-bottom.jpg');
+    background-size: cover;
+    background-position: bottom;
+    height: 500px;
+    width: 100%;
+    position: relative;
+    top: 500px;
+    z-index: 10;
+}
+.footer {
+    position: relative;
+    top: 420px;
+    height: 50px;
+    line-height: 50px;
+    z-index: 15;
+    box-sizing: border-box;
+    padding: 5px;
+    text-align: center;
+    font-size: 24px;
+    color: #eee;
+}
+.container {
+    width: 100%;
+    height:100%;
+    border: 0;
+    padding: 15px;
+    margin: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+#block-bottom .container {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.user-card {
+    display: none;
+    width: 400px;
+    height: 425px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    transition: width .3s;
+}
+.user-card .image {
+    width: 125px;
+    height: 125px;
+    box-sizing: content-box;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 30px auto 30px auto;
+}
+.user-card .image img {
+    width: 100%;
+}
+.user-card h1 {
+    font-weight: 300;
+    font-size: 28px;
+    text-align: center;
+    margin: 0 auto 20px auto;
+}
+.user-card p {
+    font-weight: 100;
+    font-size: 20px;
+    text-align: center;
+}
+.card-link {
+    margin: 20px auto;
+    text-align: center;
+}
+a {
+    color: #333;
+    border-bottom: 1px dotted #333;
+    text-decoration: none;
+    margin: 10px;
+}
+.icons-menu {
+    margin: 40px auto;
+    text-align: center;
+}
+.icons {
+    border: 0;
+    text-decoration: none;
+    opacity: .7;
+    transition: opacity .3s;
+}
+.icons img {
+    width: 35px;
+    height: 35px;
+}
+.icons:hover {
+    opacity: 1;
+}
+.container h1 {
+    font-size: 36px;
+    letter-spacing: 15px;
+    text-align: center;
+    margin-top: 30px;
+}
+.contact-from {
+    width: 600px;
+    margin: 0 auto;
+    padding: 15px;
+    -webkit-transition: all .6s;
+    /* Safari */
+    transition: all .6s;
+}
+.contact-from form input {
+    width: 280px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 0;
+    font-size: 20px;
+    padding: 5px;
+    box-sizing: border-box;
+    margin: 15px auto;
+}
+.contact-from form textarea {
+    width: 100%;
+    line-height: 30px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 0;
+    font-size: 20px;
+    padding: 5px;
+    box-sizing: border-box;
+    margin: 15px auto;
+}
+.contact-from form button {
+    color: #gray;
+    width: 280px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    border: 1px solid gray;
+    background-color: rgba(255, 255, 255, 0.6);
+    font-size: 20px;
+    box-sizing: border-box;
+}
+.contact-from form button:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #000;
+}
+hr {
+    border: 0;
+    border-top: 1px solid #00405d;
+}
+@media screen and (min-width:600px) {
+    .user-card {
+        width: 400px;
+        height: 425px;
+    }
+    #block-bottom {
+        height: 550px;
+    }
+    .footer {
+        top: 450px;
+    }
+}
+@media screen and (min-width: 481px) and (max-width:600px) {
+    .user-card {
+        width: 380px;
+        height: 415px;
+        margin: 0 auto;
+    }
+    .contact-from {
+        width: 380px;
+        margin: 0 auto;
+    }
+    .contact-from form input, .contact-from form button {
+        width: 100%;
+    }
+    #block-bottom {
+        height: 570px;
+    }
+    .footer {
+        top: 450px;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .user-card {
+        width: 340px;
+        height: 415px;
+        margin: 0 auto;
+    }
+    .contact-from {
+        width: 340px;
+        margin: 0 auto;
+    }
+    .contact-from form input, .contact-from form button {
+        width: 100%;
+    }
+    #block-bottom {
+        height: 600px;
+    }
+    .footer {
+        top: 450px;
+        font-size: 14px;
+    }
+
+    #block-center h1 {
+        font-size: 24px;
+        top: 60px;
+    }
+}
